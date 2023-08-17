@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -61,3 +62,7 @@ yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+=======
+# vaga-front-end-huggy
+Desafio técnico referente a vaga de Desenvolvedor Front-End Vue.js Jr. na empresa Huggy
+>>>>>>> 773a8958b0917bc73c265f1b0653adf867173d75
