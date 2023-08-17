@@ -1,0 +1,176 @@
+// global-variables.scss
+
+:root {
+  /* Colors */
+  // Fill Colors
+  --color-fill-neutral-low-0: #ffffff;
+  --color-fill-neutral-low-1: #f6f6f8;
+  --color-fill-neutral-low-2: #f0f0f2;
+  --color-fill-neutral-low-3: #e8e8eb;
+  --color-fill-neutral-low-4: #dcdce1;
+  --color-fill-neutral-low-5: #cfcfd5;
+
+  --color-fill-medium-low-0: #adadb3;
+  --color-fill-medium-low-1: #9d9da3;
+  --color-fill-medium-low-2: #75757b;
+  --color-fill-medium-low-3: #5d5d63;
+  --color-fill-medium-low-4: #46464a;
+  --color-fill-medium-low-5: #3a3a3d;
+
+  --color-fill-high-low-0: #28282b;
+  --color-fill-high-low-1: #232326;
+  --color-fill-high-low-2: #1e1e21;
+  --color-fill-high-low-3: #19181b;
+  --color-fill-high-low-4: #141316;
+  --color-fill-high-low-5: #0f0e10;
+
+  --color-fill-primary-0: #eef0fc;
+  --color-fill-primary-1: #d8defc;
+  --color-fill-primary-2: #a4b2f8;
+  --color-fill-primary-3: #374fc9;
+  --color-fill-primary-4: #293ea5;
+  --color-fill-primary-5: #1e2f83;
+
+  --color-fill-success-0: #f1fdf4;
+  --color-fill-success-1: #e9fcef;
+  --color-fill-success-2: #bef7d2;
+  --color-fill-success-3: #47c480;
+  --color-fill-success-4: #38a96d;
+  --color-fill-success-5: #2b8656;
+
+  --color-fill-danger-0: #fcf2f2;
+  --color-fill-danger-1: #fbdbdb;
+  --color-fill-danger-2: #f7afae;
+  --color-fill-danger-3: #d7494b;
+  --color-fill-danger-4: #af2f30;
+  --color-fill-danger-5: #902524;
+
+  // Text Colors
+  --color-text-on-neutral-low-weak: #75757b;
+  --color-text-on-neutral-low-default: #46464a;
+  --color-text-on-neutral-low-strong: #232326;
+  --color-text-on-neutral-low-cta: #2934a5;
+  --color-text-on-neutral-low-cta-hover: #373dc9;
+  --color-text-on-neutral-low-success: #38a96d;
+  --color-text-on-neutral-low-success-hover: #47c480;
+  --color-text-on-neutral-low-danger: #af2f30;
+  --color-text-on-neutral-low-danger-hover: #f7afae;
+  --color-text-on-neutral-low-disabled: #9d9da3;
+
+  --color-text-on-neutral-high-weak: #adadb3;
+  --color-text-on-neutral-high-default: #e8e8eb;
+  --color-text-on-neutral-high-strong: #ffffff;
+  --color-text-on-neutral-high-cta: #a4b2f8;
+  --color-text-on-neutral-high-cta-hover: #d8defc;
+  --color-text-on-neutral-high-success: #bef7d2;
+  --color-text-on-neutral-high-success-hover: #e9fcef;
+  --color-text-on-neutral-high-danger: #f7afae;
+  --color-text-on-neutral-high-danger-hover: #fbdbdb;
+  --color-text-on-neutral-high-disabled: #cfcfd5;
+
+  --color-text-on-color-low-weak: #5d5d63;
+  --color-text-on-color-low-default: #46464a;
+  --color-text-on-color-low-strong: #141316;
+
+  --color-text-on-color-high-weak: #ffffffcc;
+  --color-text-on-color-high-default: #ffffffeb;
+  --color-text-on-color-high-strong: #ffffff;
+
+  /* Borders */
+  --color-border-neutral-0: #ffffff;
+  --color-border-neutral-1: #e8e8eb;
+  --color-border-neutral-2: #dcdce1;
+  --color-border-neutral-3: #cfcfd5;
+  --color-border-neutral-4: #adadb3;
+  --color-border-neutral-5: #232326;
+
+  --color-border-primary-0: #d8defc;
+  --color-border-primary-1: #374fc9;
+}
+
+.tittle-1, h1 {
+  color: #000;
+  /* typescale/tittle/1 */
+  font-family: IBM Plex Sans;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 46.8px */
+}
+.tittle-2, h2 {
+  color: #000;
+  /* typescale/tittle/2 */
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%; /* 36px */
+}
+.body-1-regular {
+  color: #000;
+  /* typescale/body/1/regular */
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+}
+
+.body-1-bold {
+  color: #000;
+  /* typescale/body/1/bold */
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+}
+
+.body-2-regular {
+  color: #000;
+
+  /* typescale/body/2/regular */
+  font-family: IBM Plex Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 25.2px */
+}
+
+.body-2-bold {
+  color: #000;
+
+  /* typescale/body/2/bold */
+  font-family: IBM Plex Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%; /* 25.2px */
+  letter-spacing: 0.14px;
+}
+
+.caption-1 {
+  color: #000;
+
+  /* typescale/caption/1 */
+  font-family: IBM Plex Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 21.6px */
+}
+
+.caption-2 {
+  color: #000;
+
+  /* typescale/caption/2 */
+  font-family: IBM Plex Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 18px */
+}
+
+
+
+
