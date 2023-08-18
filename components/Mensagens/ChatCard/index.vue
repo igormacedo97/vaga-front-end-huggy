@@ -1,13 +1,13 @@
 <template>
   <div :class="cardActive ? 'ctn-chart-card-ativo' : 'ctn-chat-card'">
     <div class="img-chat-card">
-      <AvatarContact />
+      <AvatarContact :imgUrl="dataCard.chatCustomer.photo" />
     </div>
     <div class="ctn-info-user">
       <!-- Ajustar para receber variável banco -->
-      <h3 class="body-1-bold">Agostinho Carrara</h3>
+      <h3 class="body-1-bold">{{ dataCard.chatCustomer.name }}</h3>
       <h4 class="body-2-regular ellipsis-1">
-        Minha ultima mensagem dese contato
+        {{ dataCard.lastMessage.text }}
       </h4>
     </div>
   </div>
@@ -18,7 +18,11 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  dataCard: {
+    type: Object,
+  },
 });
+// console.log(props.dataCard);
 </script>
 <style lang="scss">
 .ctn-chat-card,
@@ -33,6 +37,7 @@ const props = defineProps({
   &:hover {
     background: var(--color-fill-primary-0, #eef0fc);
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
   }
   &:active {
     background: var(--color-fill-primary-1, #d8defc);

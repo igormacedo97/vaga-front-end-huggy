@@ -1,6 +1,6 @@
 <template>
   <img
-    src="https://i.imgur.com/jShq8JU.jpeg"
+    :src="imgUrl ? imgUrl : 'https://c.pzw.io/img/avatar-user-boy.jpg'"
     :class="
       size == 'small' || size == 'sm'
         ? 'ctn-image-avatar-sm'
@@ -11,6 +11,9 @@
 <script setup>
 const props = defineProps({
   size: {
+    type: String,
+  },
+  imgUrl: {
     type: String,
   },
 });

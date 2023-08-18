@@ -1,9 +1,16 @@
 <template>
   <div class="ctn-header-card-chat">
-    <AvatarContact :size="'small'" />
-    <h3 class="name-user-chat">Agostinho Carrara</h3>
+    <AvatarContact :size="'small'" :imgUrl="dataHeaderSection.photo" />
+    <h3 class="name-user-chat">{{ dataHeaderSection.name }}</h3>
   </div>
 </template>
+<script setup lang="ts">
+const props = defineProps({
+  dataHeaderSection: {
+    type: Object,
+  },
+});
+</script>
 <style lang="scss">
 .ctn-header-card-chat {
   padding: 12px 16px;

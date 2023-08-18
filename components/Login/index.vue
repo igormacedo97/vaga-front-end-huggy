@@ -7,16 +7,17 @@
       </p>
     </div>
     <div class="btn-login">
-      <a
-        href="https://auth.huggy.app/oauth/authorize?scope=install_app%20read_agent_profile&response_type=code&redirect_uri=https://ec56-186-233-111-182.ngrok-free.app/api/callback&client_id=APP-afbe9134-bdfb-4427-a208-933bbd162b35"
-      >
+      <a :href="urlAuth">
         <BotoesPadrao :isDisabled="false">Fazer login com a Huggy</BotoesPadrao>
       </a>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const config = useRuntimeConfig();
+const urlAuth = `https://auth.huggy.app/oauth/authorize?scope=install_app%20read_agent_profile&response_type=code&redirect_uri=${config.NUXT_HUGGY_REDIRECT_URL}/api/callback&client_id=${config.NUXT_HUGGY_CLIENT_ID}`;
+</script>
 
 <style lang="scss" scoped>
 .ctn-login {
@@ -52,6 +53,13 @@
 
   .btn-login {
     margin: 64px 0 48px 0;
+  }
+
+  .btn-login {
+    a {
+      text-transform: none;
+      text-decoration: none;
+    }
   }
 }
 </style>

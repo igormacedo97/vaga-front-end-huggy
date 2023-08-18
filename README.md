@@ -1,4 +1,13 @@
-<<<<<<< HEAD
+# Desafio FrontEnd Huggy
+
+Para rodar local necessário criar o .env com os seguintes parâmetros, ambos você terá acesso nas informações do seu aplicativo.
+
+```
+NUXT_PUBLIC_HUGGY_CLIENT_ID={id do cliente}
+NUXT_PUBLIC_HUGGY_REDIRECT_URL={url de redirecionamento}
+NUXT_HUGGY_SECRET_ID={id secreto}
+```
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -62,7 +71,3 @@ yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-=======
-# vaga-front-end-huggy
-Desafio técnico referente a vaga de Desenvolvedor Front-End Vue.js Jr. na empresa Huggy
->>>>>>> 773a8958b0917bc73c265f1b0653adf867173d75
