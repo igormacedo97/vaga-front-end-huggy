@@ -3,7 +3,6 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const id = getRouterParam(event, 'id');
 
-  console.log('BODDDYYY', body)
 
 
   return $fetch(`https://api.huggy.app/v3/chats/${id}/messages`, {

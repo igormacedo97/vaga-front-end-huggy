@@ -2,9 +2,7 @@
   <div>
     <div class="ctn-titulo-minhas-mensagens">
       <h1 class="titulo-minhas-mensagens">Minhas Mensagens</h1>
-      <!-- {{ chatList }} -->
     </div>
-    <!-- transformar em v-for -->
     <div class="ctn-area-lista-conversas">
       <MensagensChatCard
         v-for="dataCard in chatList"
@@ -17,7 +15,6 @@
   </div>
 </template>
 <script setup>
-// import { ref } from "vue";
 const props = defineProps({
   chatList: {
     type: Array,
@@ -28,7 +25,6 @@ const props = defineProps({
 });
 const emit = defineEmits(["openMessage"]);
 const openChat = (item) => {
-  console.log("ATIVAR CARD,", item);
   emit("openMessage", item);
 };
 </script>

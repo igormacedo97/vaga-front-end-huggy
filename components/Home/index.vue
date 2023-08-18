@@ -35,7 +35,6 @@ const { data } = await useFetch("/api/chats/", {
 
 // GET - Abrir conversa
 async function openMessage(event) {
-  console.log("clicando na lista,", event);
   messageList.value = await useFetch(`/api/chats/${event.id}/messages`, {
     method: "GET",
   });
@@ -51,7 +50,6 @@ async function openMessage(event) {
 
 // POST - Enviar menssagem
 async function sendMessageChat(data) {
-  console.log("daaaattaaaaa", data);
   dataSendMessage.value = await useFetch(
     `/api/chats/${idSelected.value}/messages`,
     {

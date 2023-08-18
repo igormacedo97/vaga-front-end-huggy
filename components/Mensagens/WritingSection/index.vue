@@ -64,7 +64,6 @@ const btnSendMessage = () => {
     file: imgUrl.value,
     isInternal: false,
   };
-  console.log("dataSend ", dataSend);
   emit("sendMessageChat", dataSend);
   textMessage.value = "";
 };

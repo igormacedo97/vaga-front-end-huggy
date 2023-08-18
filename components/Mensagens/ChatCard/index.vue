@@ -4,7 +4,6 @@
       <AvatarContact :imgUrl="dataCard.chatCustomer.photo" />
     </div>
     <div class="ctn-info-user">
-      <!-- Ajustar para receber variável banco -->
       <h3 class="body-1-bold">{{ dataCard.chatCustomer.name }}</h3>
       <h4 class="body-2-regular ellipsis-1">
         {{ dataCard.lastMessage.text }}
@@ -22,7 +21,6 @@ const props = defineProps({
     type: Object,
   },
 });
-// console.log(props.dataCard);
 </script>
 <style lang="scss">
 .ctn-chat-card,
