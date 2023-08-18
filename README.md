@@ -8,6 +8,8 @@ NUXT_PUBLIC_HUGGY_REDIRECT_URL={url de redirecionamento}
 NUXT_HUGGY_SECRET_ID={id secreto}
 ```
 
+Se for fazer o deploy em alguma plataforma, só adicionar os mesmos campos acima nas suas variáveis de ambientes.
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
